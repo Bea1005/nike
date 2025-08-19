@@ -1,0 +1,166 @@
+* {
+  margin: 0.3rem;
+  padding: 0.5rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(226, 100%, 94%);
+  color: #333;
+}
+.container {
+  padding: 2ps;
+  margin: 0.8rem;
+  /*max-width: 1440px;*/
+  overflow: auto;
+}
+.container2 {
+  padding: 2ps;
+  margin: 0.8rem;
+  margin-top: 0%;
+  max-width: 1440px;
+  overflow: auto;
+}
+.d-flex2{
+ display: flex;
+ gap: 3px;
+  
+}
+.d-flex {
+ display: flex;
+ gap: 1px;
+  
+}
+img{
+    aspect-ratio:2/2;
+    object-fit: contain;
+    border-radius: 0.8px;
+    max-width: 285px; 
+
+}
+
+@media screen and (max-width: 768px) {
+  .d-flex{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+   color: aliceblue;
+  }
+  body{
+    background: linear-gradient(120deg, #a8edea, #db408e); /* Gradient background */
+    color: #333;
+  }
+}
+.m-1{
+  margin: 1rem;
+}
+.box {
+  background: #ee0606;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0.1);
+  padding: 24px;
+  margin: 100px 20x;
+  max-width: 1440px;
+  overflow: auto;
+  border-color: azure;
+}
+
+.box-parent {
+  background: rgb(29, 29, 223);
+  color: white;
+  font-weight: 700;
+}
+
+.bg-red {
+  background-color: #dd3b94;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: aliceblue;
+}
+
+.bg-blue {
+  background: rgb(228, 29, 168);
+  color: white;
+  font-weight: 700;
+   margin-left: auto;
+  margin-right: auto;
+  border-color: aliceblue;
+}
+
+.bg-green {
+  background: rgb(5, 7, 5);
+  color: white;
+  font-weight: 700;
+    margin-left: auto;
+  margin-right: auto;
+  border-color: aliceblue;
+}
+  
+
+.bg-pinks {
+  background: rgb(10, 9, 9);
+  color: white;
+  font-weight: 700;
+    margin-left: auto;
+  margin-right: auto;
+  border-color: aliceblue;
+}
+button.box {
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, 0.2s;
+  outline: none;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+button.box:hover {
+  transform: scale(1.08);
+  opacity: 0.95;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+  background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+}
+
+
+
+/*.container::before {
+  contain: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: blue;
+  padding: 3rem;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.container::after {
+  contain: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(238, 31, 31);
+  padding: 3rem;
+  border-radius: 4px;
+}
+.box-absolute {
+  position: absolute;
+  top: 0%;
+  left: 12%;
+  z-index: -1;
+}
+.box-parent {
+  position: relative;
+}
